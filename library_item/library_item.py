@@ -10,6 +10,17 @@ class LibraryItem:
 
     def __init__(self, title: str, author: str, genre: Genre):
         """
+        Initializes class attributes to argument values.
+
+        Args:
+            title (str): The title of the library item.
+            author (str): The author of the library item.
+            genre (Genre): The Genre of the library item.
+
+        Raises:
+            ValueError: When title is blank, when author is blank,
+            when Genre is invalid.
+
         """
 
         if len(title.strip()) > 0:
@@ -31,6 +42,11 @@ class LibraryItem:
     @property
     def title(self) -> str:
         """
+        Accessor for title attribute
+
+        Returns:
+            str: The title of the library item.
+
         """
         return self.__title
     
@@ -38,13 +54,22 @@ class LibraryItem:
     @property
     def author(self) -> str:
         """
+        Accessor for the author attribute
+
+        Returns:
+            str: The author of the library item.
+
         """
         return self.__author
     
     @property
     def genre(self) -> Genre:
         """
+        Accessor for the genre attribute
+
+        Returns:
+            Genre: Enum value of genre.
+            
         """
         return self.__genre
-    
     
