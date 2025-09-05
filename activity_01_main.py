@@ -21,21 +21,23 @@ def main():
     # Use your own unique valid values for the inputs to the class.
 
     try:
-        book = LibraryItem("Hobbit", "Tolkien", Genre.FANTASY)
+        book = LibraryItem(777, "Hobbit", "Tolkien", Genre.FANTASY, False)
     except ValueError as e:
         print(e)
          
     # 2. Using the instance defined above, and the class Accessors, print 
     # each of the attributes of the LibraryItem instance.
 
-    print(f"{book.title}, {book.author}, {book.genre.name}")   
+    print(f"{book.item_id}, {book.title}, {book.author},"
+          + f" {book.genre.name}, {book.is_borrowed}")   
     
 
     # 3. Code a statement which creates an instance of the LibraryItem class with one or more invalid inputs.
     # Use your own unique valid values for the inputs to the class.
 
     try:
-        invalid_book = LibraryItem(" ", "Author", Genre.NON_FICTION)
+        invalid_book = LibraryItem(123, "Where is my book",
+                                "Who wrote this book", Genre.NON_FICTION, "False")
     except ValueError as e:
         print(e)
 
