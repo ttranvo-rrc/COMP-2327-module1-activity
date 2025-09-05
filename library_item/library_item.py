@@ -13,13 +13,19 @@ class LibraryItem:
         Initializes class attributes to argument values.
 
         Args:
+            item_id (int): An id number to uniquely identify 
+            the library item.
             title (str): The title of the library item.
             author (str): The author of the library item.
             genre (Genre): The Genre of the library item.
+            is_borrowed (bool): Identifies whether the library item
+            is borrowed (True) or available (False).
 
         Raises:
-            ValueError: When title is blank, when author is blank,
-            when Genre is invalid.
+            ValueError: When item_id is non numeric, 
+            when title is blank, when author is blank, 
+            when Genre is invalid, 
+            when is_borrowed is not a true or false.
 
         """
 
@@ -52,6 +58,11 @@ class LibraryItem:
     @property
     def item_id(self) -> int:
         """
+        Accessor for item_id attribute
+
+        Returns:
+            int: The item id of the library item.
+
         """
         return self.__item_id
 
@@ -92,5 +103,9 @@ class LibraryItem:
     @property
     def is_borrowed(self) -> bool:
         """
+        Accessor for the is_borrowed attribute
+
+        Returns:
+            bool: True or false of the status of the library item.
         """
         return self.__is_borrowed
