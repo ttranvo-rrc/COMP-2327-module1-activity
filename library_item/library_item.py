@@ -28,4 +28,23 @@ class LibraryItem:
             raise ValueError("Invalid Genre.")
     
 
+    @property
+    def title(self) -> str:
+        """
+        """
+        return self.__title
+    
 
+    @property
+    def author(self) -> str:
+        """
+        """
+        return self.__author
+    
+    @property
+    def genre(self) -> Genre:
+        """
+        """
+        return self.__genre
+    
+    
