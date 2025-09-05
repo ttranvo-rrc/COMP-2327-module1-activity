@@ -1,4 +1,5 @@
 # Intermediate Software Development Activity 1
+
 This activity will help to reinforce learning of the Module 1 concepts of:
 
 - Interpreting a Class Diagram
@@ -7,7 +8,9 @@ This activity will help to reinforce learning of the Module 1 concepts of:
 - Unit Test Planning
 
 ## Author
+
 Tri Tranvo
 
 ## Additional Information
-[ Use this space to include additional information that may help in your learning. ]
+
+Utilized demo repo from instructor for guidance
